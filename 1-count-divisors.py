@@ -10,6 +10,26 @@ l, r, k = map(int, input().split())
 if num % k == 0:
     # do something
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 # Solution
 l, r, k = map(int, input().split())
 cnt = 0
