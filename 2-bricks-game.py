@@ -15,6 +15,25 @@ total += min(i * 2, N - total)
 # 4. Game ends when total == N where total is the number of bricks
 # that Patlu and Motu used.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # My solution
 N = int(input())
 i, sofar = 0, 0
