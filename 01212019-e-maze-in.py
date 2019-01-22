@@ -11,3 +11,31 @@ for c in S:
     elif c == 'R':
         # do something
 ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# My solution:
+S = input()
+x, y = 0, 0
+for c in S:
+    if c == 'L':
+        x -= 1
+    elif c == 'R':
+        x += 1
+    elif c == 'D':
+        y -= 1
+    elif c == 'U':
+        y += 1
+print('{} {}'.format(x, y))
