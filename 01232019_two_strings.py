@@ -10,3 +10,26 @@ for _ in range(T):
 #        Here is a resource -- https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/
 
 # If you have any questions, start a thread on the Today's coding challenge in the #general slack channel. Good luck!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# My solution:
+T = int(input())
+for _ in range(T):
+    S1, S2 = input().split()
+    if sorted(S1) == sorted(S2):
+        print('YES')
+    else:
+        print('NO')
