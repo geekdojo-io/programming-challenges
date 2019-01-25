@@ -6,3 +6,26 @@ for _ in range(T):
     # Your logic goes here
     
 # Hint2 - This problem can be solved as a simple math problem dealing with hours and minutes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# My solution:
+
+T = int(input())
+for _ in range(T):
+    SH, SM, EH, EM = map(int, input().split())
+    start = SH*60 + SM
+    end = EH*60 + EM
+    diff = end - start
+    print(diff//60, diff % 60)
