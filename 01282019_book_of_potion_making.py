@@ -14,3 +14,42 @@ for i in range(10):
 # Hint4: You can check if the sum is divisible by 11:
 if total % 11 == 0:
     # handle the case where the sum is divisible by 11.
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# My Solution:
+def isISBN(S):
+    if len(S) != 10:
+        return False
+    total = 0
+    for i in range(10):
+        total += (i+1)*int(S[i])
+    return total % 11 == 0
+
+S = input()
+print('Legal ISBN' if isISBN(S) else 'Illegal ISBN')
