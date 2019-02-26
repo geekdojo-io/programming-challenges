@@ -11,7 +11,5 @@ for i in range(T):
    h, w, n = map(int, input().split())
    ar = []
    for _ in range(h):
-       ar.append(input())
-   for _ in range(n):
-       for s in ar:
-           print(s * n)
+       ar.append(input()*n)
+   print('\n'.join(ar))
