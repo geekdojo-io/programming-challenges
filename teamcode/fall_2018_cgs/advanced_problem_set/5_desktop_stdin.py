@@ -9,7 +9,7 @@ XXOXXXOX # Output of s * 2
 T = int(input())
 for i in range(T):
    h, w, n = map(int, input().split())
-   ar = []
+   s = ''
    for _ in range(h):
-       ar.append(input()*n)
-   print('\n'.join(ar))
+       s += input()*n + '\n'
+   print(s*n)
