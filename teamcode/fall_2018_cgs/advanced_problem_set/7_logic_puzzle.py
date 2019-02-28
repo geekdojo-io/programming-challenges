@@ -1,3 +1,5 @@
+# Problem: 7. Logic Puzzle (190) - https://teamscode.com/assets/docs/fall_2018_cgs/advanced_problem_set.pdf
+
 
 
 from collections import defaultdict
