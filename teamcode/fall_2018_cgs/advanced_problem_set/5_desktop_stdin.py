@@ -6,8 +6,7 @@ XXOXXXOX # Output of s * 2
 
 # My solution:
 
-T = int(input())
-for i in range(T):
+for _ in range(int(input())):
    h, w, n = map(int, input().split())
    s = ''
    for _ in range(h):
