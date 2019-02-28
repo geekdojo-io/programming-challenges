@@ -1,6 +1,9 @@
 # Problem: 7. Logic Puzzle (190) - https://teamscode.com/assets/docs/fall_2018_cgs/advanced_problem_set.pdf
 
+# Hint: This problem can be approached as a graph search problem.
 
+
+# My solution
 
 from collections import defaultdict
 
@@ -27,6 +30,7 @@ for s in students:
     elif len(tmp) == 6 and tmp[3] == 'same': # Same
         s1, s2 = tmp[0], tmp[-1]
         same[s1].append(s2)
+        same[s2].append(s1)
 
 # Depth first search
 def dfs(g, a, b):
@@ -39,6 +43,9 @@ def dfs(g, a, b):
         if b == s or b in same[s]:
             return True
         res |= dfs(g, s, b)
+        for s2 in same[s]: # Handle the 'same' case
+            print(same[s])
+            res |= dfs(g, s2, b)
     return res
 
 def solve(a, b):
