@@ -90,9 +90,19 @@ Output
 Answer: Use `print(a, end=' ')`.
 
 ```python
+ar = [10, 20, 30, 40]
 for num in ar: # Note how the for loop is used here.
     print(num, end=' ') # Use end=' ' so that print does not create a line break
 ```
+
+Another option: Use `join`
+
+```python
+ar = [10, 20, 30, 40]
+print(' '.join(str(num) for num in arr))
+```
+
+Which way do you prefer? Go with `join`.
 
 ---
 
