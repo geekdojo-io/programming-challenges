@@ -17,5 +17,5 @@ if __name__ == '__main__':
         s = input().strip()
         if s == '0 0 0 0': 
             break
-        a, b, c, d = map(int, s)
+        a, b, c, d = map(int, s.split())
         print(solve(a, b, c, d))
