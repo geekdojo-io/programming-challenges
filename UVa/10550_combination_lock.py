@@ -11,7 +11,6 @@ def test_simple():
     assert solve(0, 10, 0, 10) == 1890
     assert solve(9, 19, 9, 19) == 1890
 
-
 if __name__ == '__main__':
     while True:
         s = input().strip()
