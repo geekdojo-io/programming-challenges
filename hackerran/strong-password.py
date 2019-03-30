@@ -28,7 +28,6 @@ def minimumNumber(n, password):
         has_lower, other_chars = check_condition(c, has_lower, "abcdefghijklmnopqrstuvwxyz", other_chars)
         has_upper, other_chars = check_condition(c, has_upper, "ABCDEFGHIJKLMNOPQRSTUVWXYZ", other_chars)
         has_special, other_chars = check_condition(c, has_special, "!@#$%^&*()-+", other_chars)
-    print(has_number, has_lower, has_upper, has_special, other_chars)
     return calculate_minnumber(has_number, has_lower, has_upper, has_special, other_chars)
 
 def test_simple():
